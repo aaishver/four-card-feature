@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-size: 15px;
+    max-height: 100vh;
+    padding: 3rem 9rem;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    padding-bottom: 2rem;
+}
+h1, h2{
+    color: hsl(234, 12%, 34%);
+}
+p{
+    color:hsl(229, 6%, 66%);
+}
+
+/*----------- top container  css section--------- */
+
+.top-container{
+    text-align: center;
+}
+.top-container p{
+    margin:1rem 20rem ;
+}
+#top1-head{
+    font-weight: 200;
+}
+
+/* --------bottom-container css section--------- */
+
+.bottom-container{
+    display: flex;
+}
+.box{
+    margin: 2rem;
+    flex: 1;
+}
+.box1{
+    margin: auto;
+}
+.box3{
+    margin-top: 2rem;
+}
+.box4{
+    margin: auto;
+}
+.text-container{
+    padding: 1.5rem 2rem 2rem 2rem;
+}
+.text-container p{
+    padding-right: 2rem;
+}
+.img-container{
+    text-align: end;
+    padding:0 2rem; 
+}
+
+
+/* ---------common css for all boxes---------- */
+
+.common{
+    overflow: hidden;
+    box-shadow: 5px 9px 15px 2px hsl(0, 6%, 74%);
+    border-radius: 6px;
+    min-height:240px ;
+}
+
+
+/* -------empty colour divs on top of boxes-------- */
+
+.color1{
+    padding: 0.13rem;
+    background-color: hsl(180, 62%, 55%);
+}
+.color2{
+    padding: 0.13rem;
+    background-color: hsl(0, 78%, 62%);
+}
+.color3{
+    padding: 0.13rem;
+    background-color: hsl(34, 97%, 64%);
+}
+.color4{
+    padding: 0.13rem;
+    background-color: hsl(212, 86%, 64%);
+}
+
+
+/* ------------media queries  for responsiveness----------- */
+
+
+@media (max-width:1170px){
+    .top-container p{
+        margin:1rem 10rem ;
+    }
+    body{
+        padding: 3rem 8rem;
+    }
+}
+
+
+@media (max-width:1050px){
+    .top-container p{
+        margin:1rem 6rem ;
+    }
+    body{
+        padding: 3rem 5rem;
+    }
+}
+
+
+@media (max-width:920px){
+    body{
+        font-size: 13px;
+        padding: 3rem 3rem;
+    }
+    img{
+        width: 30%;
+    }
+    .text-container{
+        padding: 1.3rem 1.5rem 1.5rem 1.5rem;
+    }
+    .text-container p{
+        padding-right: 1rem;
+        margin-top: 6px;
+    }
+    .common{
+        min-height: 220px;
+    }
+}
+
+
+@media (max-width:710px){
+    body{
+        padding: 3rem 1.5rem;
+    }
+    img{
+        width: 40%;
+    }
+    .box{
+        margin: 1rem;
+    }
+    .box4{
+        margin: auto;
+    }
+    .box1{
+        margin: auto;
+    }
+    .box3{
+        margin-top: 1rem;
+    }
+}
+
+
+@media (max-width:575px){
+    .bottom-container{
+        flex-direction: column;
+    }
+    .box1{
+        margin: 0 1rem;
+    }
+    .box4{
+        margin: 0 1rem;
+    }
+    img{
+        width: 20%;
+    }
+    .common{
+        min-height: 200px;
+    }
+    .top-container p{
+        margin:1rem 2rem ;
+    }
+}
+
+
+@media (max-width:380px){
+    h1{
+        font-size:large;
+    }
+    h2{
+        font-size:large;
+    }
+}
+
+
+@media (max-width:330px){
+    .top-container p{
+        margin:1rem 0;
+    }
+    .box{
+        margin: 1rem 0;
+    }
+    .bot-mid-container{
+        margin: 0;
+    }
+    img{
+        width: 40px;
+    }
+}
