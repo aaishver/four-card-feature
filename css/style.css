@@ -39,6 +39,7 @@ p{
     display: flex;
 }
 .box{
+    background-color: white;
     margin: 2rem;
     flex: 1;
 }
